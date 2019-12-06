@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KnowReggie.com</title>
+<style type="text/css">
+ body {
+                background: black;
+                color: black;
+                padding: 10px;
+                font-family:times new roman;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+                background:lime
+            }
+            h1 {
+                margin: 10px;
+                text-align:center;
+                color:black;   
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: lime;
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color:black;
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color:black;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background:lime;
+                display: flex;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            /* portfolio styles */
+            #portfolio {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            
+            #portfolio li {
+                background: lime;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                color:lime;
+            }
+            
+            #portfolio li:hover {
+                background: lime;
+                color:lime;
+            } 
+            
+            #portfolio a {
+                text-decoration: none;
+                color: lime;
+            
+</style>
+      <div id="all-contents">
+        <nav>
+            <header>We are Young Entertainment</header>
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <nav>
+            <!-- Nav stuff here...-->
+        </nav> 
+        <main>
+            <div class="content">
+                <h1>Oh, I didn't see you there</h1>
+                <script scr="data:image/png;base64,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"></script>
+                <script id="portfolioScript">$(document).ready(function() {$.getJSON('projects/projects.json').then(function(data) { data.projects.forEach(function(project){ $('#portfolio').append('<li><a href="projects/' + project.name + '/">' + project.title + ' : ' + project.description + '</a></li>'); }); }); });</script>
+                <ul id="portfolio">
+                </ul>
+            </div>
+        </main>
+
+</head>
+<body>
+
+</body>
+</html>
